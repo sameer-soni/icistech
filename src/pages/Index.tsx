@@ -113,35 +113,35 @@ const Index = () => {
             <TimelineCard
               icon={Calendar}
               title="Paper Submission"
-              date="15th Sep, 2025"
+              date="31st Oct, 2025"
               delay={0.1}
             />
 
             <TimelineCard
               icon={Mail}
               title="Acceptance Notice"
-              date="15th Oct, 2025"
+              date="20th Nov, 2025"
               delay={0.2}
             />
 
             <TimelineCard
               icon={Clock}
               title="Registration"
-              date="31st Oct, 2025"
+              date="05th Dec, 2025"
               delay={0.3}
             />
 
             <TimelineCard
               icon={Camera}
               title="Camera Ready"
-              date="31st Oct, 2025"
+              date="05th Dec, 2025"
               delay={0.4}
             />
 
             <TimelineCard
               icon={Target}
               title="Conference"
-              date="13th - 14th Nov"
+              date="11th - 12th Dec"
               delay={0.5}
             />
           </motion.div>
