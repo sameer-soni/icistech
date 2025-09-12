@@ -99,7 +99,7 @@ const Index = () => {
               transition={{ duration: 0.8, delay: 1.6 }}
               className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/80 mb-6 md:mb-10 px-4 font-medium conference-date"
             >
-              Conference: 13th - 14th November, 2025 (Hybrid Mode)
+              Conference: 11th - 12th December, 2025 (Hybrid Mode)
             </motion.p>
           </motion.div>
 
