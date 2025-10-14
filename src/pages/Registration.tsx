@@ -1,7 +1,7 @@
 
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { Users, Globe, GraduationCap, Building, Calendar, CreditCard } from 'lucide-react';
+import { Users, Globe, GraduationCap, Building, Calendar, CreditCard, Presentation, StickyNote } from 'lucide-react';
 import FloatingTopBar from '../components/FloatingTopBar';
 import FloatingSidebar from '../components/FloatingSidebar';
 
@@ -9,7 +9,7 @@ const Registration = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const internationalFees = [
-    { category: "International Participant", fee: "$300", icon: Globe, color: "from-blue-600 to-blue-400" },
+    { category: "International Participant", fee: "$350", icon: Globe, color: "from-blue-600 to-blue-400" },
     { category: "Early Registration (on or before 30th October, 25)", fee: "$250", icon: Calendar, highlight: true, color: "from-emerald-600 to-emerald-400" }
   ];
 
@@ -18,7 +18,9 @@ const Registration = () => {
     { category: "Early Registration (On or Before 30th October, 25)", fee: "₹9,500", icon: Calendar, highlight: true, color: "from-emerald-600 to-emerald-400" },
     { category: "Member or Fellow (IEEE/ CSI/ IE/ OSA)", fee: "₹9,000", icon: Users, color: "from-indigo-600 to-indigo-400" },
     { category: "First/ Corresponding Author belongs to an institute under the NIRF 100 Rank", fee: "₹9,000", icon: Building, color: "from-cyan-600 to-cyan-400" },
-    { category: "Students (With a valid ID Card/ College ID)", fee: "₹9,000", icon: GraduationCap, color: "from-teal-600 to-teal-400" }
+    { category: "Students (With a valid ID Card/ College ID)", fee: "₹9,000", icon: GraduationCap, color: "from-teal-600 to-teal-400" },
+    { category: "Abstract Presentation & Publication (Faculty Members/ Researchers/ Scientists/ Industry Persons/ Students)", fee: "₹1,000", icon: Presentation, color: "from-teal-600 to-teal-400" },
+    { category: "Poster/ Modal Presentation(Faculty Members/ Researchers/ Scientists/ Industry Persons/ Students)", fee: "₹500", icon: StickyNote, color: "from-teal-600 to-teal-400" }
   ];
 
   return (

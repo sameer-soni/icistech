@@ -99,7 +99,7 @@ const Index = () => {
               transition={{ duration: 0.8, delay: 1.6 }}
               className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/80 mb-6 md:mb-10 px-4 font-medium conference-date"
             >
-              Conference: 11th - 12th December, 2025 (Hybrid Mode)
+              Conference: 26th - 27th February, 2026 (Hybrid Mode)
             </motion.p>
           </motion.div>
 
@@ -113,35 +113,35 @@ const Index = () => {
             <TimelineCard
               icon={Calendar}
               title="Paper Submission"
-              date="31st Oct, 2025"
+              date="31st Dec, 2025"
               delay={0.1}
             />
 
             <TimelineCard
               icon={Mail}
               title="Acceptance Notice"
-              date="20th Nov, 2025"
+              date="31st Jan, 2026"
               delay={0.2}
             />
 
             <TimelineCard
               icon={Clock}
               title="Registration"
-              date="05th Dec, 2025"
+              date="15th Feb, 2026"
               delay={0.3}
             />
 
             <TimelineCard
               icon={Camera}
               title="Camera Ready"
-              date="05th Dec, 2025"
+              date="15th Feb, 2026"
               delay={0.4}
             />
 
             <TimelineCard
               icon={Target}
               title="Conference"
-              date="11th - 12th Dec"
+              date="26th - 27th Feb, 2026"
               delay={0.5}
             />
           </motion.div>
