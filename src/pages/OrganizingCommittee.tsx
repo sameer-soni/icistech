@@ -16,7 +16,7 @@ const OrganizingCommittee = () => {
     },
     {
       name: "Dr. Atul Chauhan",
-      title: "Patron",
+      title: "Chief Patron",
       subtitle: "Chancellor, Amity University President, RBEF",
       image:
         "https://assets-ext.bizzabo.com/bizzaboprod/image/upload/c_crop,g_custom,f_auto/v1611228293/hrmsnaje0z7ouim7zrzv.jpg",
@@ -75,34 +75,15 @@ const OrganizingCommittee = () => {
       name: "Dr. Lalita Kumari",
       title: "Assistant Professor, ASET, Amity University Patna",
     },
-    {
-      name: "Dr. Deepak Kumar Singh",
-      title: "Assistant Professor, ASET, Amity University Patna",
-    },
+    // {
+    //   name: "Dr. Deepak Kumar Singh",
+    //   title: "Assistant Professor, ASET, Amity University Patna",
+    // },
   ];
 
-  const scientificCommittee = [
+  const techincalCommittee = [
     {
       name: "Dr. Rakesh Kumar Yadav",
-      title: "Assistant Professor, ASET, Amity University Patna",
-    },
-    {
-      name: "Dr. Preetish Ranjan",
-      title: "Assistant Professor, ASET, Amity University Patna",
-    },
-    {
-      name: "Mr. Nikhil Sharma",
-      title: "Assistant Professor, ASET, Amity University Patna",
-    },
-    {
-      name: "Mr. Satyajit Nath",
-      title: "Assistant Professor, ASET, Amity University Patna",
-    },
-  ];
-
-  const technicalCommittee = [
-    {
-      name: "Dr. Santosh Kumar Dixit",
       title: "Assistant Professor, ASET, Amity University Patna",
     },
     {
@@ -110,11 +91,30 @@ const OrganizingCommittee = () => {
       title: "Assistant Professor, ASET, Amity University Patna",
     },
     {
-      name: "Dr. Vishal Srivastava",
+      name: "Dr. Preetish Ranjan",
+      title: "Assistant Professor, ASET, Amity University Patna",
+    },
+    {
+      name: "Dr. Deepak Kumar Singh",
       title: "Assistant Professor, ASET, Amity University Patna",
     },
     {
       name: "Dr. Abhishek Anand",
+      title: "Assistant Professor, ASET, Amity University Patna",
+    },
+  ];
+
+  const scientificCommittee = [
+    {
+      name: "Dr. Santosh Kumar Dixit",
+      title: "Professor, ASET, Amity University Patna",
+    },
+    {
+      name: "Mr. Nikhil Sharma",
+      title: "Assistant Professor, ASET, Amity University Patna",
+    },
+    {
+      name: "Mr. Satyajit Nath",
       title: "Assistant Professor, ASET, Amity University Patna",
     },
     {
@@ -125,6 +125,25 @@ const OrganizingCommittee = () => {
       name: "Mr. Saurav Kumar",
       title: "Assistant Professor, ASET, Amity University Patna",
     },
+    {
+      name: "Mr. Abhinav Jha",
+      title: "Assistant Professor, ASET, Amity University Patna",
+    },
+  ];
+
+  const technicalSupport = [
+    {
+      name: "Dr. Vishal Srivastava",
+      title: "Assistant Professor, ASET, Amity University Patna",
+    },
+    {
+      name: "Dr. Prakash Kumar",
+      title: "Assistant Professor, ASET, Amity University Patna",
+    },
+    {
+      name: "Dr. Niranjan Kumar",
+      title: "Assistant Professor, ASET, Amity University Patna",
+    }
   ];
 
   const sponsorshipCommittee = [
@@ -135,6 +154,21 @@ const OrganizingCommittee = () => {
     {
       name: "Dr. Niranjan Kumar",
       title: "Assistant Professor, ASET, Amity University Patna",
+    },
+  ];
+
+  const MediaPublicityCommittee = [
+    {
+      name: "Mr. Yashmit Singh ",
+      title: "ASET, Amity University Patna",
+    },
+    {
+      name: "Mr. Dhananjay Kumar",
+      title: "ASET, Amity University Patna",
+    },
+    {
+      name: "Mr. Tarun Kumar",
+      title: "ASET, Amity University Patna",
     },
   ];
 
@@ -277,7 +311,7 @@ const OrganizingCommittee = () => {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="text-white/80 text-lg"
             >
-              Meet the distinguished team leading ICISTECH 2025
+              Meet the distinguished team leading ICISTECH 2026
             </motion.p>
           </motion.div>
 
@@ -289,7 +323,7 @@ const OrganizingCommittee = () => {
             className="mb-16"
           >
             <h2 className="text-2xl md:text-3xl font-bold text-teal-300 text-center mb-8">
-              Chief Patron & Patron
+              Chief Patron
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {chiefPatrons.map((person, index) => (
@@ -330,7 +364,7 @@ const OrganizingCommittee = () => {
             className="mb-16"
           >
             <h2 className="text-2xl md:text-3xl font-bold text-teal-300 text-center mb-8">
-              Co-Patrons
+              Patrons
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {coPatrons.map((person, index) => (
@@ -414,8 +448,36 @@ const OrganizingCommittee = () => {
             <h2 className="text-2xl md:text-3xl font-bold text-teal-300 text-center mb-8">
               Conference Co-Chairs
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center">
               {conferenceCoChairs.map((person, index) => (
+                <motion.div
+                  key={person.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 2.5 + index * 0.1 }}
+                  className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 text-center hover:bg-white/15 transition-all duration-300"
+                >
+                  <h3 className="text-white font-semibold text-sm mb-2">
+                    {person.name}
+                  </h3>
+                  <p className="text-teal-300 text-xs">{person.title}</p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Techincal committee */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 2.3 }}
+            className="mb-16"
+          >
+            <h2 className="text-2xl md:text-3xl font-bold text-teal-300 text-center mb-8">
+              Technical Committee
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-center">
+              {techincalCommittee.map((person, index) => (
                 <motion.div
                   key={person.name}
                   initial={{ opacity: 0, y: 20 }}
@@ -440,9 +502,9 @@ const OrganizingCommittee = () => {
             className="mb-16"
           >
             <h2 className="text-2xl md:text-3xl font-bold text-teal-300 text-center mb-8">
-              Scientific Committee Chair
+              Scientific Program Committee
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {scientificCommittee.map((person, index) => (
                 <motion.div
                   key={person.name}
@@ -468,10 +530,10 @@ const OrganizingCommittee = () => {
             className="mb-16"
           >
             <h2 className="text-2xl md:text-3xl font-bold text-teal-300 text-center mb-8">
-              Technical Program Committee
+              Technical Support Committee
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {technicalCommittee.map((person, index) => (
+              {technicalSupport.map((person, index) => (
                 <motion.div
                   key={person.name}
                   initial={{ opacity: 0, y: 20 }}
@@ -489,7 +551,7 @@ const OrganizingCommittee = () => {
           </motion.div>
 
           {/* Sponsorship Committee */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 4.2 }}
@@ -514,10 +576,38 @@ const OrganizingCommittee = () => {
                 </motion.div>
               ))}
             </div>
+          </motion.div> */}
+
+          {/* Media and Publicity Committee */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 3.4 }}
+            className="mb-16"
+          >
+            <h2 className="text-2xl md:text-3xl font-bold text-teal-300 text-center mb-8">
+              Media and Publicity Committee
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {MediaPublicityCommittee.map((person, index) => (
+                <motion.div
+                  key={person.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 3.6 + index * 0.1 }}
+                  className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 text-center hover:bg-white/15 transition-all duration-300"
+                >
+                  <h3 className="text-white font-semibold text-sm mb-2">
+                    {person.name}
+                  </h3>
+                  <p className="text-teal-300 text-xs">{person.title}</p>
+                </motion.div>
+              ))}
+            </div>
           </motion.div>
 
           {/* International Advisory Committee */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 4.6 }}
@@ -547,7 +637,7 @@ const OrganizingCommittee = () => {
                 </motion.div>
               ))}
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </div>

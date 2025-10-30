@@ -141,7 +141,7 @@ const IcisTech = () => {
             className="text-center icistech-title"
           >
             <h1 className="text-4xl md:text-5xl font-bold text-blue-300 mb-4">
-              ICISTECH-25
+              ICISTECH-26
             </h1>
             <p className="text-xl text-blue-200">
               Advancing Technology Through Global Collaboration
@@ -182,7 +182,7 @@ const IcisTech = () => {
 
                   <div className="space-y-4 text-gray-200">
                     <p className="text-lg leading-relaxed">
-                      ICISTECH-25, organized by Amity School of Engineering &
+                      ICISTECH-26, organized by Amity School of Engineering &
                       Technology (ASET), Amity University Patna, is a premier
                       conference focused on recent research challenges and
                       advancements in science and technology.

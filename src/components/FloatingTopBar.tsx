@@ -35,7 +35,7 @@ const FloatingTopBar = ({ onMenuToggle }: FloatingTopBarProps) => {
 
       {/* Desktop title */}
       <div className="hidden lg:block text-whites font-bold text-xl tracking-wider text-blue-300">
-        ICIS<span className="text-purple-400">TECH</span>25
+        ICIS<span className="text-purple-400">TECH</span>26
       </div>
     </motion.div>
   );

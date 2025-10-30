@@ -36,7 +36,7 @@ const Sponsors = () => {
       icon: Award,
       title: "Brand Recognition",
       description:
-        "Your brand will receive prominent recognition as an official sponsor of ICISTECH 2025",
+        "Your brand will receive prominent recognition as an official sponsor of ICISTECH 2026",
     },
     {
       icon: Users,
@@ -170,7 +170,7 @@ const Sponsors = () => {
   ];
 
   const whyBecomeSponsor = [
-    "ICISTECH 2025, is an international event to present the latest results from the research.",
+    "ICISTECH 2026, is an international event to present the latest results from the research.",
     "It serves as a dynamic platform where industry leaders and researchers come together to exchange insights, explore emerging technologies, and discuss business opportunities and real-world applications.",
     "Sponsors benefit from enhanced visibility and branding throughout the conference.",
     "As a sponsor, you gain valuable access to key officials from top R&D organizations and influential project stakeholders.",
@@ -227,7 +227,7 @@ const Sponsors = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-4xl md:text-5xl font-bold text-white mb-4"
             >
-              ICISTECH-25 Sponsorship
+              ICISTECH-26 Sponsorship
             </motion.h1>
 
             <motion.p

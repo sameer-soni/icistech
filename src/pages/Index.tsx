@@ -40,7 +40,7 @@ const Index = () => {
               transition={{ duration: 1, delay: 0.7 }}
               className="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl font-bold mb-3 md:mb-5 bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent leading-tight main-title"
             >
-              ICIS<span className="text-purple-400">TECH</span>25
+              ICIS<span className="text-purple-400">TECH</span>26
             </motion.h1>
 
             <motion.p

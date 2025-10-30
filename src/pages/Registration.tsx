@@ -71,7 +71,7 @@ const Registration = () => {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="text-xl text-gray-300 max-w-3xl mx-auto"
             >
-              Join ICISTECH25 - Register now for the premier international conference on information systems and technology
+              Join ICISTECH26 - Register now for the premier international conference on information systems and technology
             </motion.p>
           </motion.div>
 
