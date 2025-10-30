@@ -28,11 +28,13 @@ const OrganizingCommittee = () => {
       name: "Mr. U Ramachandran",
       title: "Sr. Vice President",
       subtitle: "Amity Education Group",
+      image: "/mr_u.png"
     },
     {
       name: "Mr. Gauravh Gupta",
       title: "Vice President",
       subtitle: "Amity Education Group",
+      image: "/gaurav.png"
     },
     {
       name: "Dr. Vivekanand Pandey",
@@ -69,11 +71,11 @@ const OrganizingCommittee = () => {
   const conferenceCoChairs = [
     {
       name: "Dr. Umesh Kumar",
-      title: "Assistant Professor, ASET, Amity University Patna",
+      title: "Associate Professor, ASET, Amity University Patna",
     },
     {
       name: "Dr. Lalita Kumari",
-      title: "Assistant Professor, ASET, Amity University Patna",
+      title: "Associate Professor, ASET, Amity University Patna",
     },
     // {
     //   name: "Dr. Deepak Kumar Singh",
@@ -84,11 +86,11 @@ const OrganizingCommittee = () => {
   const techincalCommittee = [
     {
       name: "Dr. Rakesh Kumar Yadav",
-      title: "Assistant Professor, ASET, Amity University Patna",
+      title: "Associate Professor, ASET, Amity University Patna",
     },
     {
       name: "Dr. Sanjay Kumar",
-      title: "Assistant Professor, ASET, Amity University Patna",
+      title: "Associate Professor, ASET, Amity University Patna",
     },
     {
       name: "Dr. Preetish Ranjan",
