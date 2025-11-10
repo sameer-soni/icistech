@@ -32,6 +32,12 @@ const menuItems = [
     path: "/call-for-papers",
   },
   {
+    icon: FileText,
+    label: "Call for Abstract/Posters",
+    hasDropdown: false,
+    path: "/call-for-poster",
+  },
+  {
     icon: UserPlus,
     label: "Registration",
     hasDropdown: false,

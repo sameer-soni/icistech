@@ -15,6 +15,7 @@ import Contact from "./pages/Contact";
 import AmityUniversity from "./pages/AmityUniversity";
 import IcisTech from "./pages/IcisTech";
 import NotFound from "./pages/NotFound";
+import CallForPoster from "./pages/CallForPoster";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/committee" element={<OrganizingCommittee />} />
           <Route path="/call-for-papers" element={<CallForPapers />} />
+          <Route path="/call-for-poster" element={<CallForPoster />} />
           <Route path="/important-dates" element={<ImportantDates />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/published-works" element={<PublishedWorks />} />
