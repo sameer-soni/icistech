@@ -25,9 +25,9 @@ const FloatingTopBar = ({ onMenuToggle }: FloatingTopBarProps) => {
       </div>
 
       {/* Desktop title - Centered */}
-      <div className="hidden lg:block absolute left-1/2 -translate-x-1/2 text-white font-bold text-xl tracking-wider text-blue-300">
+      {/* <div className="hidden lg:block absolute left-1/2 -translate-x-1/2 text-white font-bold text-xl tracking-wider text-blue-300">
         ICIS<span className="text-purple-400">TECH</span>26
-      </div>
+      </div> */}
 
       <div className="flex items-center gap-2 sm:gap-4">
         {/* Register Button - Themed Gradient */}
