@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Calendar, Mail, Clock, Camera, Target } from "lucide-react";
+import { Calendar, Mail, Clock, Camera, Target, Mic, Music, Laugh, PenTool, HelpCircle, Gamepad2 } from "lucide-react";
 import FloatingTopBar from "../components/FloatingTopBar";
 import FloatingSidebar from "../components/FloatingSidebar";
 import TimelineCard from "../components/TimelineCard";
@@ -144,6 +144,45 @@ const Index = () => {
               date="26th - 27th Feb, 2026"
               delay={0.5}
             />
+          </motion.div>
+
+          {/* Extra Events & Activities */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 2.2 }}
+            className="mt-6 md:mt-8 text-center events-section"
+          >
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 2.4 }}
+              className="text-sm md:text-base text-white/70 mb-3"
+            >
+              Extra Events & Activities
+            </motion.p>
+            
+            <div className="flex flex-wrap justify-center gap-2 md:gap-3 max-w-2xls mx-auto">
+              {[
+                { icon: Music, label: "Singing" },
+                { icon: Mic, label: "Open Mic" },
+                { icon: PenTool, label: "Poetry" },
+                { icon: Laugh, label: "Standup Comedy" },
+                { icon: HelpCircle, label: "Quiz" },
+                // { icon: Gamepad2, label: "Fun Games" },
+              ].map((event, index) => (
+                <motion.div
+                  key={event.label}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.3, delay: 2.5 + index * 0.08 }}
+                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm cursor-default"
+                >
+                  <event.icon className="w-3.5 h-3.5 text-white/80" />
+                  <span className="text-xs md:text-sm text-white/80">{event.label}</span>
+                </motion.div>
+              ))}
+            </div>
           </motion.div>
         </div>
       </div>
