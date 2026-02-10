@@ -69,7 +69,7 @@ const Index = () => {
               transition={{ duration: 0.6, delay: 1.4 }}
               className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-5 md:mb-8 px-4 button-container"
             >
-              <Link to={"/call-for-papers"}>
+              <Link to={"/call-for-poster"}>
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
