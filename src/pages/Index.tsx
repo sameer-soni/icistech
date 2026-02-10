@@ -75,12 +75,13 @@ const Index = () => {
                   whileTap={{ scale: 0.95 }}
                   className="px-6 sm:px-8 md:px-10 py-3 md:py-4 bg-white text-blue-900 font-semibold rounded-full hover:bg-white/90 transition-all duration-300 shadow-lg hover:shadow-xl text-base md:text-lg action-button"
                 >
-                  Call For Paper
+                  Call For Abstract
                 </motion.button>
               </Link>
 
               <a
-                href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FICISTECH2025"
+                // href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FICISTECH2025"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeYdb9FfDHqlwEW4VCP_zZWKFEWMna2X2Ke4pJJ2YYAvilSzQ/viewform"
                 target="_blank"
               >
                 <motion.button
@@ -88,7 +89,7 @@ const Index = () => {
                   whileTap={{ scale: 0.95 }}
                   className="px-6 sm:px-8 md:px-10 py-3 md:py-4 bg-transparent border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-blue-900 transition-all duration-300 text-base md:text-lg action-button"
                 >
-                  Submit Paper
+                  Submit Abstract
                 </motion.button>
               </a>
             </motion.div>
