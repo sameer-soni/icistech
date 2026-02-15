@@ -187,6 +187,27 @@ const CallForPapers = () => {
             </motion.h1>
           </motion.div> */}
 
+          {/* Paper Publication Partner */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="mb-12"
+          >
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
+              Paper Publication Partner
+            </h2>
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 md:p-8 flex items-center justify-center">
+              <div className="bg-white rounded-xl p-5">
+                <img
+                  src="/springer.jpeg"
+                  alt="Springer - Paper Publication Partner"
+                  className="h-20 md:h-24 w-auto object-contain"
+                />
+              </div>
+            </div>
+          </motion.div>
+
           {/* Author Guidelines */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}

@@ -241,6 +241,59 @@ const Sponsors = () => {
             </motion.p>
           </motion.div>
 
+          {/* Our Sponsors Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.7 }}
+            className="mb-20"
+          >
+            <div className="text-center mb-10">
+              {/* <motion.div
+                initial={{ scale: 0.9, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.8 }}
+                className="inline-flex items-center gap-2 px-4 py-2 bg-yellow-500/15 border border-yellow-400/30 rounded-full text-yellow-300 text-sm font-medium mb-4"
+              >
+                <Star className="w-4 h-4" />
+                Our Valued Partners
+              </motion.div> */}
+              <h2 className="text-3xl font-bold text-white mb-3">
+                Our Sponsors
+              </h2>
+              <p className="text-white/60 max-w-2xl mx-auto">
+                We are grateful to our sponsors for their generous support in making ICISTECH 2026 a success
+              </p>
+            </div>
+
+            <div className="flex flex-wrap justify-center items-center gap-8">
+              {[
+                { name: "Nescafé", logo: "/sponsors/nescafe2.jpeg" },
+                { name: "Pizza Hut", logo: "/sponsors/pizzaHut2.jpeg" },
+                { name: "Red Bull", logo: "/sponsors/redbull.png" },
+              ].map((sponsor, index) => (
+                <motion.div
+                  key={sponsor.name}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5, delay: 0.9 + index * 0.15 }}
+                  whileHover={{ scale: 1.05, y: -4 }}
+                  className="group relative bg-white/[0.07] backdrop-blur-md border border-white/15 rounded-2xl p-10 flex flex-col items-center justify-center transition-all duration-300 hover:bg-white/[0.12] hover:border-white/25 hover:shadow-lg hover:shadow-blue-500/10 w-72 h-64"
+                >
+                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-white/5 to-transparent pointer-events-none" />
+                  <img
+                    src={sponsor.logo}
+                    alt={`${sponsor.name} logo`}
+                    className="max-h-32 max-w-[200px] object-contain mb-4 drop-shadow-lg transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <span className="text-white/70 text-sm font-medium tracking-wide group-hover:text-white/90 transition-colors duration-300">
+                    {sponsor.name}
+                  </span>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
           {/* Benefits Section */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}

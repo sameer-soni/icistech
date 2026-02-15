@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-// Removed unused icons: FileText, Users, Award, ChevronDown, ChevronUp
+import { ExternalLink } from "lucide-react";
 import { useState } from "react";
 import FloatingTopBar from "../components/FloatingTopBar";
 import FloatingSidebar from "../components/FloatingSidebar";
@@ -29,6 +29,62 @@ const CallForPoster = () => {
         <div className="max-w-4xl mx-auto">
           {/* Header - Commented out as in original */}
           {/* <motion.div ... </motion.div> */}
+
+          {/* Publication Partner Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="mb-12"
+          >
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
+              Publication Partner
+            </h2>
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 md:p-8">
+              <div className="flex flex-col md:flex-row items-center gap-8">
+                {/* Clickable Logo */}
+                <a
+                  href="https://www.sciencepublishinggroup.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-shrink-0 group"
+                >
+                  <div className="bg-white rounded-xl p-4 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-blue-400/20 group-hover:scale-105">
+                    <img
+                      src="/sciencePG.jpeg"
+                      alt="Science Publishing Group logo"
+                      className="h-24 md:h-28 w-auto object-contain"
+                    />
+                  </div>
+                </a>
+
+                {/* Description */}
+                <div className="flex-1 text-center md:text-left">
+                  <p className="text-white/90 leading-relaxed mb-4">
+                    All accepted abstracts will be published in an abstract book
+                    by the{" "}
+                    <strong className="text-white">
+                      Science Publishing Group (SciencePG)
+                    </strong>
+                    . SciencePG is an internationally recognized open access
+                    publisher. It specializes in publishing journal articles,
+                    books, and conference proceedings, aiming to support the
+                    global research community in knowledge dissemination and
+                    innovation.
+                  </p>
+                  <a
+                    href="https://www.sciencepublishinggroup.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-blue-300 hover:text-blue-200 font-medium transition-colors duration-200"
+                  >
+                    Visit SciencePG Website
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </motion.div>
 
           {/* CALL FOR ABSTRACT SUBMISSION */}
           <motion.div
