@@ -89,7 +89,7 @@ const Index = () => {
                   whileTap={{ scale: 0.95 }}
                   className="px-6 sm:px-8 md:px-10 py-3 md:py-4 bg-transparent border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-blue-900 transition-all duration-300 text-base md:text-lg action-button"
                 >
-                  Submit Abstract
+                  Submit Abstract <span className="opacity-50 mx-1">|</span> Poster
                 </motion.button>
               </a>
             </motion.div>
