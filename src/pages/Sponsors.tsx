@@ -266,11 +266,12 @@ const Sponsors = () => {
               </p>
             </div>
 
-            <div className="flex flex-wrap justify-center items-center gap-8">
+            <div className="flex flex-wrap justify-center items-center gap-5">
               {[
                 { name: "Nescafé", logo: "/sponsors/nescafe2.jpeg" },
                 { name: "Pizza Hut", logo: "/sponsors/pizzaHut2.jpeg" },
                 { name: "Red Bull", logo: "/sponsors/redbull.png" },
+                { name: "Ecofit", logo: "/sponsors/ecofit.png" },
               ].map((sponsor, index) => (
                 <motion.div
                   key={sponsor.name}
@@ -278,13 +279,13 @@ const Sponsors = () => {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.9 + index * 0.15 }}
                   whileHover={{ scale: 1.05, y: -4 }}
-                  className="group relative bg-white/[0.07] backdrop-blur-md border border-white/15 rounded-2xl p-10 flex flex-col items-center justify-center transition-all duration-300 hover:bg-white/[0.12] hover:border-white/25 hover:shadow-lg hover:shadow-blue-500/10 w-72 h-64"
+                  className="group relative bg-white/[0.07] backdrop-blur-md border border-white/15 rounded-2xl p-5 flex flex-col items-center justify-center transition-all duration-300 hover:bg-white/[0.12] hover:border-white/25 hover:shadow-lg hover:shadow-blue-500/10 w-56 h-52"
                 >
                   <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-white/5 to-transparent pointer-events-none" />
                   <img
                     src={sponsor.logo}
                     alt={`${sponsor.name} logo`}
-                    className="max-h-32 max-w-[200px] object-contain mb-4 drop-shadow-lg transition-transform duration-300 group-hover:scale-105"
+                    className="max-h-36 max-w-[180px] object-contain mb-3 drop-shadow-lg transition-transform duration-300 group-hover:scale-105"
                   />
                   <span className="text-white/70 text-sm font-medium tracking-wide group-hover:text-white/90 transition-colors duration-300">
                     {sponsor.name}
