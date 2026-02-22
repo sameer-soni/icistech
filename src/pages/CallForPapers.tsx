@@ -208,6 +208,71 @@ const CallForPapers = () => {
             </div>
           </motion.div>
 
+          {/* Announcement to Authors */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="mb-12"
+          >
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
+              Announcement to Authors (Full Paper)
+            </h2>
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 md:p-8 space-y-5">
+              <p className="text-white/90 leading-relaxed">
+                We sincerely thank all our dear authors for their valuable contributions and submissions. Your research efforts and dedication are highly appreciated.
+              </p>
+
+              {/* Accepted / Revised */}
+              <div>
+                <h3 className="text-lg font-semibold text-white mb-2">
+                  Regarding Full Paper Decisions — <span className="text-green-300">Accepted / Revised Papers</span>
+                </h3>
+                <p className="text-white/85 leading-relaxed">
+                  Authors of accepted and revised papers have been notified directly by the editorial team through Springer. Please follow the instructions provided in the communication for the next steps.
+                </p>
+              </div>
+
+              {/* Rejected & Desk-Rejected */}
+              <div>
+                <h3 className="text-lg font-semibold text-white mb-2">
+                  <span className="text-red-300">Rejected & Desk-Rejected Papers</span>
+                </h3>
+                <p className="text-white/85 leading-relaxed mb-3">
+                  Authors of rejected and desk-rejected submissions have been informed through the CMT portal.
+                </p>
+                <p className="text-white/85 mb-2">Desk rejections were made based on the following criteria:</p>
+                <ul className="list-disc list-inside text-white/80 space-y-1 pl-2">
+                  <li>High AI-generated content percentage</li>
+                  <li>Excessive plagiarism percentage</li>
+                  <li>Non-compliance with Springer formatting guidelines</li>
+                  <li>Simultaneous submission to another conference or journal</li>
+                </ul>
+              </div>
+
+              {/* CMT Portal Note */}
+              <p className="text-white/85 leading-relaxed">
+                Authors may log in to the{" "}
+                <a
+                  href="https://cmt3.research.microsoft.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-cyan-300 underline underline-offset-2 hover:text-cyan-200 transition-colors"
+                >
+                  CMT portal
+                </a>{" "}
+                to review the decision and related details.
+              </p>
+
+              {/* Portal Open Notice */}
+              <div className="bg-white/5 rounded-lg px-4 py-3 border border-white/10">
+                <p className="text-yellow-300 font-medium text-sm md:text-base">
+                  The portal is now open (Till 25th February) only for Abstract / Poster / Model Submission.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+
           {/* Author Guidelines */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
