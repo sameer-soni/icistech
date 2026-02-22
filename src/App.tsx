@@ -16,6 +16,7 @@ import AmityUniversity from "./pages/AmityUniversity";
 import IcisTech from "./pages/IcisTech";
 import NotFound from "./pages/NotFound";
 import CallForPoster from "./pages/CallForPoster";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/committee" element={<OrganizingCommittee />} />
