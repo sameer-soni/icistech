@@ -198,10 +198,13 @@ const CallForPoster = () => {
                 Poster Presentation
               </h3>
               <ul className="text-white/90 leading-relaxed list-disc list-inside space-y-2">
-                <li>Poster size: Recommended poster size should be A1/A2.</li>
+                <li>Poster size: Recommended poster size should be A2/A3.</li>
                 <li>
                   The poster should include Title, Author(s), Affiliation,
                   Introduction, Methodology, Results, and Conclusion.
+                </li>
+                <li>
+                  Group size: Maximum 5 members per group (4 members recommended).
                 </li>
                 <li>Best posters will be awarded.</li>
               </ul>

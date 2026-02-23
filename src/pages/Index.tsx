@@ -53,14 +53,31 @@ const Index = () => {
               Technology
             </motion.p>
 
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 1.2 }}
-              className="text-sm sm:text-base md:text-lg lg:text-xl text-pink-300 mb-5 md:mb-7 px-4 scopus-text"
+            {/* Important Notice */}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 1.2 }}
+              className="mx-auto mb-5 md:mb-7 px-4 w-full"
             >
-              Accepted Papers will be published in Scopus Indexed Series
-            </motion.p>
+              <div className="bg-white/5 backdrop-blur-sm rounded-md px-5 py-2.5">
+                <p className="text-yellow-300 text-xs sm:text-sm font-semibold mb-0.5">
+                  Important Notice
+                </p>
+                <p className="text-white/85 text-xs sm:text-sm leading-snug">
+                  Authors of accepted and revised papers have been notified directly by the editorial team through Springer. Please follow the instructions provided in the communication for the next steps. Authors may log in to the{" "}
+                  <a
+                    href="https://cmt3.research.microsoft.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-cyan-300 underline underline-offset-2 hover:text-cyan-200 transition-colors"
+                  >
+                    CMT portal
+                  </a>{" "}
+                  to review the decision and related details.
+                </p>
+              </div>
+            </motion.div>
 
             {/* Action Buttons  */}
             <motion.div
@@ -94,31 +111,7 @@ const Index = () => {
               </a>
             </motion.div>
 
-            {/* Important Notice */}
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 1.5 }}
-              className="mx-auto mb-5 md:mb-8 px-4 w-full"
-            >
-              <div className="bg-white/5 backdrop-blur-sm rounded-md px-5 py-2.5">
-                <p className="text-yellow-300 text-xs sm:text-sm font-semibold mb-0.5">
-                  Important Notice
-                </p>
-                <p className="text-white/85 text-xs sm:text-sm leading-snug">
-                  Authors of accepted and revised papers have been notified directly by the editorial team through Springer. Please follow the instructions provided in the communication for the next steps. Authors may log in to the{" "}
-                  <a
-                    href="https://cmt3.research.microsoft.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-cyan-300 underline underline-offset-2 hover:text-cyan-200 transition-colors"
-                  >
-                    CMT portal
-                  </a>{" "}
-                  to review the decision and related details.
-                </p>
-              </div>
-            </motion.div>
+
 
             <motion.p
               initial={{ opacity: 0 }}
